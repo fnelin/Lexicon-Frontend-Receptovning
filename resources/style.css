@@ -1,0 +1,15 @@
+body{
+    background-color: hsl(0, 0%, 80%);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ingress{
+    background-color: lightgrey;
+}
