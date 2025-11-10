@@ -1,15 +1,16 @@
 body{
-    background-color: hsl(0, 0%, 80%);
+    font-family: Arial, Helvetica, sans-serif
 }
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:hsl(0, 100%, 20%)
 }
 
 .ingress{
-    background-color: lightgrey;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.footpicture {
+    width:40%;
 }
