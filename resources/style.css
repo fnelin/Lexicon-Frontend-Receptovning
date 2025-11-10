@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 header img {
@@ -12,14 +12,9 @@ h1 {
     color:hsl(0, 100%, 40%)
 }
 
-ul li {
+li {
     padding:0.3rem;
     margin-left: -1rem;
-}
-
-ol li {
-    padding:0.3rem;
-    margin-left: -1.5rem;
 }
 
 .main{
