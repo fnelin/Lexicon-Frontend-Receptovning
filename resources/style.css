@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    font-size: 0.8rem;
 }
 
 header img {
@@ -11,7 +12,7 @@ h1 {
 }
 
 li {
-    padding:0.4rem;
+    padding:0.3rem;
 }
 
 .main{
@@ -24,8 +25,11 @@ li {
     padding: 1rem;
 }
 
-.footerpicture {
-    width:49%;
-    display:inline-block;   
+.footerPicture {
+    width:48%;
+    display:inline-block;
 }
 
+.padRight {
+    margin-right: 1em;;
+}
