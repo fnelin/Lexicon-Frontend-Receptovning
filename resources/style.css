@@ -1,16 +1,31 @@
 body{
-    font-family: Arial, Helvetica, sans-serif
+    margin:0px;
 }
 
+header img {
+    width:100%;
+    height:250px;
+}
 h1 {
+    color:hsl(0, 100%, 40%)
+}
 
-    color:hsl(0, 100%, 20%)
+li {
+    padding:0.4rem;
+}
+
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem;
 }
 
 .ingress{
     background-color: hsl(0, 0%, 90%);
+    padding: 1rem;
 }
 
-.footpicture {
-    width:40%;
+.footerpicture {
+    width:49%;
+    display:inline-block;   
 }
+
