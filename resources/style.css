@@ -7,12 +7,19 @@ header img {
     width:100%;
     height:250px;
 }
+
 h1 {
     color:hsl(0, 100%, 40%)
 }
 
-li {
+ul li {
     padding:0.3rem;
+    margin-left: -1rem;
+}
+
+ol li {
+    padding:0.3rem;
+    margin-left: -1.5rem;
 }
 
 .main{
