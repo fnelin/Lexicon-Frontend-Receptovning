@@ -5,7 +5,7 @@ body{
 
 header img {
     width:100%;
-    height:400px;
+    height:300px;
 }
 
 h1 {
@@ -17,6 +17,16 @@ li {
     margin-left: -1rem;
 }
 
+footer {
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    }
+
+footer img{
+    width: 350px;
+}
+
 .main{
     font-family: Arial, Helvetica, sans-serif;
     margin: 2rem;
@@ -25,13 +35,4 @@ li {
 .ingress{
     background-color: hsl(0, 0%, 90%);
     padding: 1rem;
-}
-
-.footerPicture {
-    width:48%;
-    display:inline-block;
-}
-
-.padRight {
-    margin-right: 1em;;
 }
