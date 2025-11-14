@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 header img {
@@ -9,7 +9,8 @@ header img {
 }
 
 h1 {
-    color:hsl(0, 100%, 40%)
+    color:hsl(0, 100%, 40%);
+
 }
 
 li {
@@ -29,7 +30,7 @@ footer img{
 
 .main{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 2rem;
+    margin: min(4%, 2rem);
 }
 
 .ingress{
