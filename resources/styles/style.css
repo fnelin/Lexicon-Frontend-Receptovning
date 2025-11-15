@@ -1,3 +1,4 @@
+/*För att få headern att gå kant i kant med webbläsaren tar vi bort högermarginalen ifrån body */
 body{
     margin:0px;
     font-size: 0.7rem;
@@ -13,21 +14,28 @@ h1 {
 
 }
 
-li {
-    padding:0.3rem;
-    margin-left: -1rem;
+/*För att få listorna i jämnkant med övriga element justerat vi display med content istället för block*/
+ul, ol {
+    display:contents;
 }
 
+/*lägger in ett litet mellanrum mellan li för ökad tydlighet*/
+li {
+    padding:0.3rem;
+    margin-left: 1rem;
+}
+
+/*Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap.*/
 footer {
     display:flex;
-    flex-wrap:wrap;
     gap: 1rem;
-    }
+}
 
 footer img{
     width: 350px;
 }
 
+/*Div med klassen main istället för main taggen då font och marginal även ska täcka in footer*/
 .main{
     font-family: Arial, Helvetica, sans-serif;
     margin: min(4%, 2rem);
