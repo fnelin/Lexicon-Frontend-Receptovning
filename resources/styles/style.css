@@ -25,17 +25,23 @@ li {
     margin-left: 1rem;
 }
 
-/*Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap.*/
+/*Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
+Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar*/
 footer {
     display:flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
+/*La in max width för att undvika att bilderna flödar över*/
 footer img{
     width: 350px;
+    max-width:100%;
 }
 
-/*Div med klassen main istället för main taggen då font och marginal även ska täcka in footer*/
+/*Div med klassen main istället för main taggen då font och marginal även ska täcka in footer
+Marginalen justeras ned på mindre skärmar.
+*/
 .main{
     font-family: Arial, Helvetica, sans-serif;
     margin: min(4%, 2rem);
