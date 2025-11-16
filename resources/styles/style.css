@@ -1,7 +1,7 @@
-/*För att få headern att gå kant i kant med webbläsaren tar vi bort högermarginalen ifrån body */
+/*För att låsa maxbredden och få innehållet centrerat oavsett bredd av webbläsare. */
 body{
-    margin:0px;
-    font-size: 0.7rem;
+    margin:auto;
+    max-width: 800px;
 }
 
 header img {
@@ -25,25 +25,29 @@ li {
     margin-left: 1rem;
 }
 
-/*Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
-Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar*/
+/*
+Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
+Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar
+*/
 footer {
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-/*La in max width för att undvika att bilderna flödar över*/
+/*La in max-width för att undvika horizontell scrollbar */
 footer img{
     width: 350px;
     max-width:100%;
 }
 
-/*Div med klassen main istället för main taggen då font och marginal även ska täcka in footer
-Marginalen justeras ned på mindre skärmar.
+/*
+Div med klassen main istället för main taggen då font och marginal även ska täcka in footer
+Marginalen justeras ned på smalare skärmar.
 */
 .main{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
     margin: min(4%, 2rem);
 }
 
