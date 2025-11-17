@@ -1,12 +1,12 @@
 html{
-    background-color: salmon;
+    background-color: rgb(250, 126, 112);
 }
 
 /*För att låsa maxbredden och få innehållet centrerat oavsett bredd av webbläsare. */
 body{
     margin:auto;
     max-width: 800px;
-    background-color:white;
+    background-color:hsl(0, 0%, 100%);
 }
 
 header img {
