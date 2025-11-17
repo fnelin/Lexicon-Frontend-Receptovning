@@ -1,7 +1,12 @@
+html{
+    background-color: salmon;
+}
+
 /*För att låsa maxbredden och få innehållet centrerat oavsett bredd av webbläsare. */
 body{
     margin:auto;
     max-width: 800px;
+    background-color:white;
 }
 
 header img {
@@ -39,6 +44,7 @@ footer {
 footer img{
     width: 350px;
     max-width:100%;
+    margin-bottom: min(4%,2rem);
 }
 
 /*
