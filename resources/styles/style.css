@@ -34,12 +34,14 @@ li {
 Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
 Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar
 */
+/*
 footer {
+    
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
+*/
 /*La in max-width för att undvika horizontell scrollbar */
 footer img{
     width: 350px;
@@ -51,7 +53,7 @@ footer img{
 Div med klassen main istället för main taggen då font och marginal även ska täcka in footer
 Marginalen justeras ned på smalare skärmar.
 */
-.main{
+.font-margin{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.7rem;
     margin: min(4%, 2rem);
