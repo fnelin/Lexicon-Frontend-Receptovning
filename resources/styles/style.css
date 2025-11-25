@@ -16,7 +16,14 @@ header img {
 
 h1 {
     color:hsl(0, 100%, 40%);
+}
 
+figure{
+    margin:0px;
+}
+
+figcaption{
+    display:none;
 }
 
 /*För att få listorna i jämnkant med övriga element justerat vi display med content istället för block*/
@@ -34,14 +41,8 @@ li {
 Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
 Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar
 */
-/*
-footer {
-    
-    display:flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-*/
+
+
 /*La in max-width för att undvika horizontell scrollbar */
 footer img{
     width: 350px;
@@ -62,4 +63,11 @@ Marginalen justeras ned på smalare skärmar.
 .ingress{
     background-color: hsl(0, 0%, 90%);
     padding: 1rem;
+}
+
+.image-flex {
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
