@@ -9,6 +9,7 @@ body{
     background-color:hsl(0, 0%, 100%);
 }
 
+/*Låser height eftersom orginalbilden inte var av samma dimensioner som figma övningen*/
 header img {
     width:100%;
     height:300px;
@@ -37,12 +38,6 @@ li {
     margin-left: 1rem;
 }
 
-/*
-Mellanrummet mellan footer bilderna skapas genom att sätta display till flex med ett gap. 
-Läste på lite mer om flex och sätter på wrap så bilderna lägger sig under varandra på mindre skärmar
-*/
-
-
 /*La in max-width för att undvika horizontell scrollbar */
 footer img{
     width: 350px;
@@ -51,8 +46,7 @@ footer img{
 }
 
 /*
-Div med klassen main istället för main taggen då font och marginal även ska täcka in footer
-Marginalen justeras ned på smalare skärmar.
+Klassen för att homogenisera layouten för main och footer.
 */
 .font-margin{
     font-family: Arial, Helvetica, sans-serif;
@@ -60,13 +54,18 @@ Marginalen justeras ned på smalare skärmar.
     margin: min(4%, 2rem);
 }
 
+/*
+Formatering av ingressen
+*/
 .ingress{
     background-color: hsl(0, 0%, 90%);
     padding: 1rem;
 }
 
+/*
+Till bilderna i footern så de ligger snyggt med bra mellanrum
+*/
 .image-flex {
-    
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
