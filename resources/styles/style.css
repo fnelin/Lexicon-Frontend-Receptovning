@@ -23,10 +23,6 @@ figure{
     margin:0px;
 }
 
-figcaption{
-    display:none;
-}
-
 /*För att få listorna i jämnkant med övriga element justerat vi display med content istället för block*/
 ul, ol {
     display:contents;
@@ -69,4 +65,26 @@ Till bilderna i footern så de ligger snyggt med bra mellanrum
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+/*
+Arbeta med fokuslänkarna så de bara syns vid tabb-navigering
+och ligger ovanpå underlaget.
+*/
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: hsl(55, 100%, 70%);
+}
+
+.skip:focus {
+  position: fixed;
+  left:auto;
+  font-weight: bold;
+  width: auto;
+  height: auto;
 }
