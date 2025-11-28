@@ -6,21 +6,22 @@ html{
 body{
     margin:auto;
     max-width: 800px;
-    background-color:hsl(0, 0%, 100%);
+    background-color:#ffffff;
 }
-
-/*Låser height eftersom orginalbilden inte var av samma dimensioner som figma övningen*/
+/*Lägger in % för scalning av bild.*/
 header img {
     width:100%;
-    height:300px;
+    height:100%;
 }
+
+/*La in max-width för att undvika horizontell scrollbar och skala bilderna bättre*/
+main img{
+    max-width:100%;
+}
+
 
 h1 {
-    color:hsl(0, 100%, 40%);
-}
-
-figure{
-    margin:0px;
+    color:#cc0000;
 }
 
 /*För att få listorna i jämnkant med övriga element justerat vi display med content istället för block*/
@@ -34,19 +35,12 @@ li {
     margin-left: 1rem;
 }
 
-/*La in max-width för att undvika horizontell scrollbar */
-footer img{
-    width: 350px;
-    max-width:100%;
-    margin-bottom: min(4%,2rem);
-}
-
 /*
-Klassen för att homogenisera layouten för main och footer.
+Klassen för att homogenisera layouten mellan elementen i main.
 */
 .font-margin{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.7rem;
+    /*font-size: 0.7rem;*/
     margin: min(4%, 2rem);
 }
 
@@ -54,17 +48,18 @@ Klassen för att homogenisera layouten för main och footer.
 Formatering av ingressen
 */
 .ingress{
-    background-color: hsl(0, 0%, 90%);
+    background-color: #e6e6e6;
     padding: 1rem;
 }
 
 /*
-Till bilderna i footern så de ligger snyggt med bra mellanrum
+Till bilderna i Serveringsförslag så de ligger snyggt med bra mellanrum
 */
 .image-flex {
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-bottom: 2rem;
 }
 
 /*
@@ -78,13 +73,19 @@ och ligger ovanpå underlaget.
   width: 1px;
   height: 1px;
   overflow: hidden;
-  background-color: hsl(55, 100%, 70%);
+  background-color: #fffbcc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+/*
+Ta fram fokuslänkarna när man tabbar sig igenom dokumentet
+*/
 .skip:focus {
+  padding:0.25rem;
   position: fixed;
   left:auto;
-  font-weight: bold;
   width: auto;
   height: auto;
 }

@@ -12,19 +12,22 @@
         
     <body>
         <header>
-            <a href="#Ingredienser" class="skip">Hoppa till Ingredienser</a>
-            <a href="#Instruktioner" class="skip">Hoppa till Instruktioner</a>
-            <figure>
-                <img alt="En hög med pannkakor" src="./resources/images/pancake_stack.jpg"/>
-            </figure>
+            <nav aria-label="Tab Menu">
+                <a href="#Ingredienser" class="skip">Gå till ingredienser</a>
+                <a href="#Instruktioner" class="skip">Gå till instruktioner</a>
+                <a href="#Serveringsforslag" class="skip">Gå till serveringsförslag</a>
+                <img alt="" src="./resources/images/pancake_stack.jpg"/>
+            </nav>
         </header>
         
         <main class="font-margin">
             <h1>Enkelt recept på pannkakor</h1>
-            <section class="ingress" id="Ingredienser">
+            
+            <section class="ingress">
                 <p>Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
             </section>
-            <section aria-labelledby="ingredienser-pannkakssmet">
+            
+            <section aria-labelledby="ingredienser-pannkakssmet" id="Ingredienser">
                 <h2 id="ingredienser-pannkakssmet">Ingredienser</h2>
                 <p>För 4 portioner</p>
                 <ul>
@@ -36,29 +39,27 @@
                     <li>sylt, bär eller frukt till servering</li>
                 </ul>
             </section>
-            <section aria-labelledby="intruktioner-pannkakor" id="Instruktioner">
-                <h2 id="intruktioner-pannkakor">Så här gör du</h2>
+            
+            <section aria-labelledby="instruktioner-pannkakor" id="Instruktioner">
+                <h2 id="instruktioner-pannkakor">Så här gör du</h2>
                 <ol>
                     <li>Blanda mjöl och salt i en bunke.</li>
                     <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
                     <li>Vispa i resten av mjölken och äggen.</li>
-                    <li>Låt smeten vila i ca 10 minuter</li>
+                    <li>Låt smeten vila i ca 10 minuter.</li>
                     <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
-                    <li>Servera med sylt, bär eller frukt</li>
+                    <li>Servera med sylt, bär eller frukt.</li>
                 </ol>
             </section>
-        </main>
             
-        <footer class="font-margin">
-            <h2>Serveringsförslag</h2>
-            <div class="image-flex">
-                <figure>
-                    <img alt="En tallrik med pannkakor på hög med sylt och vispad grädde." src="./resources/images/pancake_stack_fruit_and_cream.jpg"/> 
-                </figure>
-                <figure>
-                    <img alt="En tallrik med pannkakor på hög med frysta hallon på toppen." src="./resources/images/pancake_stack_raspberries.jpg"/>
-                </figure>
-            </div>
-        </footer>
+            <section aria-labelledby="serveringsforslag-pannkakor" id="Serveringsforslag">
+                <h2 id="serveringsforslag-pannkakor">Serveringsförslag</h2>
+                <div class="image-flex">
+                    <img alt="En tallrik pannkakor med sylt och vispad grädde." src="./resources/images/pancake_stack_fruit_and_cream.jpg"/> 
+                    <img alt="En tallrik pannkakor med frysta hallon på toppen." src="./resources/images/pancake_stack_raspberries.jpg"/>
+                </div>
+            </section>
+        </main>
+        
     </body>
 </html>
